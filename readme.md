@@ -1,5 +1,4 @@
 Mobile Browser :
-'''
-https://github.com/sdameer/My\_DSA\_Revision/blob/main/Binary%20Search%2Fmain.ipynb
-'''
+
+[Open Binary Search Notebook](https://nbviewer.org/github/sdameer/My_DSA_Revision/blob/main/Binary%20Search/main.ipynb)
 
