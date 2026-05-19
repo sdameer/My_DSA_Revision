@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top 30 Tech Companies – SDE Hiring India 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0e17;
+    --surface: #111827;
+    --surface2: #1a2235;
+    --accent: #00e5ff;
+    --accent2: #7c3aed;
+    --gold: #f59e0b;
+    --green: #10b981;
+    --red: #f43f5e;
+    --text: #e2e8f0;
+    --muted: #64748b;
+    --border: rgba(0,229,255,0.12);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'IBM Plex Mono', monospace;
+    min-height: 100vh;
+    padding: 2rem 1rem 4rem;
+    background-image:
+      radial-gradient(ellipse 80% 40% at 50% 0%, rgba(124,58,237,0.15) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 30% at 80% 80%, rgba(0,229,255,0.08) 0%, transparent 50%);
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding: 2rem 1rem;
+  }
+
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    opacity: 0.8;
+  }
+
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(1.6rem, 4vw, 2.8rem);
+    font-weight: 800;
+    background: linear-gradient(135deg, #fff 30%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.15;
+    margin-bottom: 0.6rem;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 0.78rem;
+    letter-spacing: 0.05em;
+  }
+
+  .badges {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.2rem;
+  }
+
+  .badge {
+    background: rgba(0,229,255,0.08);
+    border: 1px solid var(--border);
+    color: var(--accent);
+    font-size: 0.65rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    letter-spacing: 0.1em;
+  }
+
+  .note-box {
+    max-width: 960px;
+    margin: 0 auto 2rem;
+    background: rgba(245,158,11,0.07);
+    border: 1px solid rgba(245,158,11,0.25);
+    border-radius: 8px;
+    padding: 0.9rem 1.2rem;
+    font-size: 0.7rem;
+    color: #fbbf24;
+    line-height: 1.7;
+  }
+
+  .note-box strong { color: var(--gold); }
+
+  .table-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: auto;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    box-shadow: 0 0 60px rgba(0,229,255,0.04);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.72rem;
+    min-width: 900px;
+  }
+
+  thead tr {
+    background: linear-gradient(90deg, var(--surface2), #1e2d45);
+    border-bottom: 2px solid var(--accent);
+  }
+
+  th {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    padding: 1rem 1.1rem;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    transition: background 0.2s;
+  }
+
+  tbody tr:hover {
+    background: rgba(0,229,255,0.04);
+  }
+
+  tbody tr:nth-child(even) {
+    background: rgba(255,255,255,0.015);
+  }
+
+  tbody tr:nth-child(even):hover {
+    background: rgba(0,229,255,0.06);
+  }
+
+  td {
+    padding: 0.8rem 1.1rem;
+    vertical-align: middle;
+    line-height: 1.5;
+  }
+
+  .rank {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  .rank.top { color: var(--gold); }
+
+  .company-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 0.82rem;
+    color: #fff;
+  }
+
+  .company-type {
+    font-size: 0.6rem;
+    color: var(--muted);
+    margin-top: 0.15rem;
+    letter-spacing: 0.05em;
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 0.58rem;
+    padding: 0.18rem 0.55rem;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-top: 0.2rem;
+  }
+
+  .tag-product { background: rgba(0,229,255,0.12); color: var(--accent); border: 1px solid rgba(0,229,255,0.25); }
+  .tag-service { background: rgba(124,58,237,0.12); color: #a78bfa; border: 1px solid rgba(124,58,237,0.25); }
+  .tag-startup { background: rgba(16,185,129,0.1); color: #34d399; border: 1px solid rgba(16,185,129,0.25); }
+  .tag-fintech { background: rgba(245,158,11,0.1); color: #fbbf24; border: 1px solid rgba(245,158,11,0.25); }
+  .tag-mnc    { background: rgba(244,63,94,0.1); color: #fb7185; border: 1px solid rgba(244,63,94,0.25); }
+
+  .month {
+    white-space: nowrap;
+  }
+
+  .month-chip {
+    display: inline-block;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 4px;
+    padding: 0.15rem 0.5rem;
+    font-size: 0.65rem;
+    margin: 0.1rem 0.1rem 0 0;
+    color: #c7d2e7;
+  }
+
+  .package {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+  }
+  .pkg-high { color: var(--accent); font-size: 0.88rem; }
+  .pkg-mid  { color: var(--green); font-size: 0.82rem; }
+  .pkg-base { color: #94a3b8; font-size: 0.78rem; }
+
+  .location {
+    font-size: 0.68rem;
+    color: #94a3b8;
+    line-height: 1.6;
+  }
+
+  .role-chip {
+    display: inline-block;
+    background: rgba(124,58,237,0.1);
+    border: 1px solid rgba(124,58,237,0.2);
+    color: #c4b5fd;
+    font-size: 0.6rem;
+    padding: 0.15rem 0.45rem;
+    border-radius: 3px;
+    margin: 0.1rem 0.1rem 0 0;
+  }
+
+  .cgpa {
+    font-size: 0.7rem;
+    color: var(--muted);
+  }
+
+  .process {
+    font-size: 0.65rem;
+    color: #94a3b8;
+    line-height: 1.55;
+  }
+
+  .difficulty {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+  }
+
+  .dot.fill { background: var(--accent); }
+  .dot.empty { background: rgba(255,255,255,0.1); }
+  .dot.fill-mid { background: var(--green); }
+  .dot.fill-high { background: var(--gold); }
+  .dot.fill-vhigh { background: var(--red); }
+
+  footer {
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 0.65rem;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+
+  footer span { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">Campus Placement Guide · India · 2026 Batch</div>
+  <h1>Top 30 Companies Hiring<br>4th Year SDE Students</h1>
+  <div class="subtitle">Software Developer Roles · Min ₹12 LPA · Pan India</div>
+  <div class="badges">
+    <span class="badge">▲ 12 LPA Minimum</span>
+    <span class="badge">⌖ Pan India</span>
+    <span class="badge">⚡ 2026 Batch</span>
+    <span class="badge">⬡ B.Tech / B.E / MCA</span>
+  </div>
+</header>
+
+<div class="note-box">
+  <strong>⚠ Important Note:</strong> Placement season for 4th year students typically begins <strong>July–August</strong> of your final year (7th–8th semester).
+  Big Tech (FAANG/MAANG) visits <strong>Tier-1 colleges (IITs, NITs, IIITs, BITS)</strong> first in Aug–Oct, while mass recruiters (TCS, Infosys, Wipro) continue through Jan–March.
+  Packages shown are <strong>Total CTC</strong> including base salary + bonus + RSUs/ESOPs. Always verify on official company portals. PPO (Pre-Placement Offer) via internship is the easiest route into top companies.
+</div>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Company</th>
+      <th>Hiring Month</th>
+      <th>Package (CTC)</th>
+      <th>Key Locations</th>
+      <th>Role Offered</th>
+      <th>Min CGPA</th>
+      <th>Process</th>
+      <th>Difficulty</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td class="rank top">1</td>
+      <td><div class="company-name">Google</div><div class="company-type">MAANG · Product</div><span class="tag tag-product">Product</span></td>
+      <td class="month"><span class="month-chip">Aug</span><span class="month-chip">Sep</span><span class="month-chip">Oct</span></td>
+      <td><div class="pkg-high">₹30–45 LPA</div><div class="pkg-base">Base ₹18–25L + RSU + Bonus</div></td>
+      <td class="location">Bengaluru<br>Hyderabad</td>
+      <td><span class="role-chip">SWE L3</span><span class="role-chip">SRE</span><span class="role-chip">Data Scientist</span></td>
+      <td class="cgpa">7.0+ CGPA<br>70%+</td>
+      <td class="process">OA → 4–5 Tech Rounds<br>System Design + DSA</td>
+      <td><div class="difficulty"><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank top">2</td>
+      <td><div class="company-name">Microsoft</div><div class="company-type">MAANG · Product</div><span class="tag tag-product">Product</span></td>
+      <td class="month"><span class="month-chip">Aug</span><span class="month-chip">Sep</span><span class="month-chip">Oct</span></td>
+      <td><div class="pkg-high">₹45–55 LPA</div><div class="pkg-base">SDE-1 Total CTC</div></td>
+      <td class="location">Hyderabad<br>Bengaluru<br>Noida</td>
+      <td><span class="role-chip">SDE-1</span><span class="role-chip">DevOps Eng</span><span class="role-chip">Data Scientist</span></td>
+      <td class="cgpa">7.0+ CGPA<br>65%+</td>
+      <td class="process">OA → 4–5 Rounds<br>Coding + HR + Bar Raiser</td>
+      <td><div class="difficulty"><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank top">3</td>
+      <td><div class="company-name">Amazon</div><div class="company-type">MAANG · Product</div><span class="tag tag-product">Product</span></td>
+      <td class="month"><span class="month-chip">Aug</span><span class="month-chip">Sep</span><span class="month-chip">Oct</span></td>
+      <td><div class="pkg-high">₹25–32 LPA</div><div class="pkg-base">SDE-1 · AWS roles higher</div></td>
+      <td class="location">Bengaluru<br>Hyderabad<br>Chennai</td>
+      <td><span class="role-chip">SDE-1</span><span class="role-chip">AWS Eng</span><span class="role-chip">QA Eng</span></td>
+      <td class="cgpa">6.5+ CGPA<br>60%+</td>
+      <td class="process">OA → 2 Tech → System Design<br>Bar Raiser → HR</td>
+      <td><div class="difficulty"><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank top">4</td>
+      <td><div class="company-name">Meta (Facebook)</div><div class="company-type">MAANG · Product</div><span class="tag tag-product">Product</span></td>
+      <td class="month"><span class="month-chip">Aug</span><span class="month-chip">Sep</span></td>
+      <td><div class="pkg-high">₹40–60 LPA</div><div class="pkg-base">Base + RSU + Bonus</div></td>
+      <td class="location">Bengaluru<br>Hyderabad</td>
+      <td><span class="role-chip">SWE</span><span class="role-chip">ML Engineer</span></td>
+      <td class="cgpa">7.5+ CGPA</td>
+      <td class="process">OA → 4 Tech Rounds<br>Behavioral + System Design</td>
+      <td><div class="difficulty"><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank top">5</td>
+      <td><div class="company-name">Apple</div><div class="company-type">MAANG · Product</div><span class="tag tag-product">Product</span></td>
+      <td class="month"><span class="month-chip">Sep</span><span class="month-chip">Oct</span></td>
+      <td><div class="pkg-high">₹35–55 LPA</div><div class="pkg-base">RSU-heavy package</div></td>
+      <td class="location">Hyderabad<br>Bengaluru</td>
+      <td><span class="role-chip">SWE</span><span class="role-chip">iOS Dev</span><span class="role-chip">HW-SW Eng</span></td>
+      <td class="cgpa">7.0+ CGPA</td>
+      <td class="process">Portfolio + 4–5 Technical<br>Rounds · Deep Specialization</td>
+      <td><div class="difficulty"><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank top">6</td>
+      <td><div class="company-name">Adobe</div><div class="company-type">MNC · Product</div><span class="tag tag-product">Product</span></td>
+      <td class="month"><span class="month-chip">Aug</span><span class="month-chip">Sep</span><span class="month-chip">Oct</span></td>
+      <td><div class="pkg-high">₹25–45 LPA</div><div class="pkg-base">Strong ESPP + bonus</div></td>
+      <td class="location">Noida<br>Bengaluru</td>
+      <td><span class="role-chip">MTS</span><span class="role-chip">SWE</span><span class="role-chip">Full Stack</span></td>
+      <td class="cgpa">7.0+ CGPA</td>
+      <td class="process">OA → 3–4 Tech Rounds<br>DSA + System Design</td>
+      <td><div class="difficulty"><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank top">7</td>
+      <td><div class="company-name">Atlassian</div><div class="company-type">MNC · Product</div><span class="tag tag-product">Product</span></td>
+      <td class="month"><span class="month-chip">Sep</span><span class="month-chip">Oct</span></td>
+      <td><div class="pkg-high">₹30–50 LPA</div><div class="pkg-base">ESOP + Bonus heavy</div></td>
+      <td class="location">Bengaluru</td>
+      <td><span class="role-chip">SWE</span><span class="role-chip">Cloud Eng</span></td>
+      <td class="cgpa">7.0+ CGPA</td>
+      <td class="process">OA → 3 Tech Rounds<br>Values-based interview</td>
+      <td><div class="difficulty"><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">8</td>
+      <td><div class="company-name">Salesforce</div><div class="company-type">MNC · SaaS</div><span class="tag tag-product">Product</span></td>
+      <td class="month"><span class="month-chip">Sep</span><span class="month-chip">Oct</span><span class="month-chip">Nov</span></td>
+      <td><div class="pkg-high">₹20–35 LPA</div><div class="pkg-base">RSU + Bonus</div></td>
+      <td class="location">Hyderabad<br>Bengaluru</td>
+      <td><span class="role-chip">AMTS</span><span class="role-chip">SWE</span><span class="role-chip">Cloud Dev</span></td>
+      <td class="cgpa">6.5+ CGPA</td>
+      <td class="process">OA → 3 Tech + HR<br>Coding + Behavioral</td>
+      <td><div class="difficulty"><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot empty"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">9</td>
+      <td><div class="company-name">Goldman Sachs</div><div class="company-type">MNC · FinTech</div><span class="tag tag-fintech">FinTech</span></td>
+      <td class="month"><span class="month-chip">Aug</span><span class="month-chip">Sep</span><span class="month-chip">Oct</span></td>
+      <td><div class="pkg-high">₹18–30 LPA</div><div class="pkg-base">Bonus can double CTC</div></td>
+      <td class="location">Bengaluru<br>Hyderabad</td>
+      <td><span class="role-chip">Analyst – Eng</span><span class="role-chip">SWE</span></td>
+      <td class="cgpa">7.0+ CGPA</td>
+      <td class="process">Hackerrank → 3–4 Rounds<br>Quant + DSA + HR</td>
+      <td><div class="difficulty"><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">10</td>
+      <td><div class="company-name">Oracle</div><div class="company-type">MNC · Cloud/DB</div><span class="tag tag-product">Product</span></td>
+      <td class="month"><span class="month-chip">Sep</span><span class="month-chip">Oct</span><span class="month-chip">Nov</span></td>
+      <td><div class="pkg-high">₹18–30 LPA</div><div class="pkg-base">Stock + Bonus</div></td>
+      <td class="location">Bengaluru<br>Hyderabad<br>Pune</td>
+      <td><span class="role-chip">Software Dev 1</span><span class="role-chip">Cloud Eng</span></td>
+      <td class="cgpa">6.5+ CGPA</td>
+      <td class="process">OA → 2–3 Tech Rounds<br>DSA + DB</td>
+      <td><div class="difficulty"><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot empty"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">11</td>
+      <td><div class="company-name">Qualcomm</div><div class="company-type">MNC · Semiconductor</div><span class="tag tag-mnc">MNC</span></td>
+      <td class="month"><span class="month-chip">Aug</span><span class="month-chip">Sep</span><span class="month-chip">Oct</span></td>
+      <td><div class="pkg-high">₹18–28 LPA</div><div class="pkg-base">ESOP + Annual Bonus</div></td>
+      <td class="location">Hyderabad<br>Bengaluru</td>
+      <td><span class="role-chip">Engineer I</span><span class="role-chip">Firmware Dev</span></td>
+      <td class="cgpa">7.0+ CGPA</td>
+      <td class="process">OA → 3 Tech Rounds<br>OS/Embedded + DSA</td>
+      <td><div class="difficulty"><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">12</td>
+      <td><div class="company-name">Samsung R&amp;D</div><div class="company-type">MNC · Product</div><span class="tag tag-product">Product</span></td>
+      <td class="month"><span class="month-chip">Aug</span><span class="month-chip">Sep</span></td>
+      <td><div class="pkg-high">₹15–28 LPA</div><div class="pkg-base">Performance Bonus</div></td>
+      <td class="location">Noida<br>Bengaluru</td>
+      <td><span class="role-chip">Software Dev</span><span class="role-chip">AI/ML Eng</span></td>
+      <td class="cgpa">6.5+ CGPA</td>
+      <td class="process">Written Test → 2–3 Tech<br>Rounds + HR</td>
+      <td><div class="difficulty"><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot empty"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">13</td>
+      <td><div class="company-name">Cisco</div><div class="company-type">MNC · Networking</div><span class="tag tag-mnc">MNC</span></td>
+      <td class="month"><span class="month-chip">Sep</span><span class="month-chip">Oct</span></td>
+      <td><div class="pkg-high">₹18–28 LPA</div><div class="pkg-base">ESPP + Bonus</div></td>
+      <td class="location">Bengaluru<br>Pune</td>
+      <td><span class="role-chip">SWE</span><span class="role-chip">Network Eng</span><span class="role-chip">Cloud Dev</span></td>
+      <td class="cgpa">6.5+ CGPA</td>
+      <td class="process">Aptitude → 3 Tech Rounds<br>Networks + DSA</td>
+      <td><div class="difficulty"><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot empty"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">14</td>
+      <td><div class="company-name">Flipkart</div><div class="company-type">Startup-turned-Product</div><span class="tag tag-startup">Startup</span></td>
+      <td class="month"><span class="month-chip">Aug</span><span class="month-chip">Sep</span><span class="month-chip">Oct</span></td>
+      <td><div class="pkg-high">₹20–35 LPA</div><div class="pkg-base">ESOP + Performance Pay</div></td>
+      <td class="location">Bengaluru</td>
+      <td><span class="role-chip">SDE-1</span><span class="role-chip">Data Eng</span><span class="role-chip">Backend Dev</span></td>
+      <td class="cgpa">6.5+ CGPA</td>
+      <td class="process">OA → 2–3 Tech Rounds<br>DSA + System Design</td>
+      <td><div class="difficulty"><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">15</td>
+      <td><div class="company-name">PayPal</div><div class="company-type">MNC · FinTech</div><span class="tag tag-fintech">FinTech</span></td>
+      <td class="month"><span class="month-chip">Sep</span><span class="month-chip">Oct</span></td>
+      <td><div class="pkg-high">₹18–30 LPA</div><div class="pkg-base">Stock + Annual Bonus</div></td>
+      <td class="location">Hyderabad<br>Chennai<br>Bengaluru</td>
+      <td><span class="role-chip">SWE</span><span class="role-chip">Full Stack</span></td>
+      <td class="cgpa">6.5+ CGPA</td>
+      <td class="process">OA → 3 Tech Rounds<br>DSA + System Design</td>
+      <td><div class="difficulty"><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot empty"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">16</td>
+      <td><div class="company-name">Uber India</div><div class="company-type">Product · Mobility</div><span class="tag tag-product">Product</span></td>
+      <td class="month"><span class="month-chip">Sep</span><span class="month-chip">Oct</span></td>
+      <td><div class="pkg-high">₹25–40 LPA</div><div class="pkg-base">RSU + Bonus</div></td>
+      <td class="location">Bengaluru<br>Hyderabad</td>
+      <td><span class="role-chip">SWE</span><span class="role-chip">Backend Dev</span></td>
+      <td class="cgpa">7.0+ CGPA</td>
+      <td class="process">OA → 3–4 Tech Rounds<br>Maps/Infra + DSA</td>
+      <td><div class="difficulty"><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot fill-high"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">17</td>
+      <td><div class="company-name">Razorpay</div><div class="company-type">Indian FinTech Unicorn</div><span class="tag tag-fintech">FinTech</span></td>
+      <td class="month"><span class="month-chip">Oct</span><span class="month-chip">Nov</span></td>
+      <td><div class="pkg-high">₹20–35 LPA</div><div class="pkg-base">ESOP + Performance Bonus</div></td>
+      <td class="location">Bengaluru</td>
+      <td><span class="role-chip">SDE-1</span><span class="role-chip">Backend Dev</span></td>
+      <td class="cgpa">6.0+ CGPA</td>
+      <td class="process">OA → 2–3 Tech Rounds<br>DSA + Product Thinking</td>
+      <td><div class="difficulty"><span class="dot fill-mid"></span><span class="dot fill-mid"></span><span class="dot fill-mid"></span><span class="dot fill-mid"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">18</td>
+      <td><div class="company-name">Swiggy</div><div class="company-type">Indian Product Unicorn</div><span class="tag tag-startup">Startup</span></td>
+      <td class="month"><span class="month-chip">Oct</span><span class="month-chip">Nov</span></td>
+      <td><div class="pkg-high">₹18–28 LPA</div><div class="pkg-base">ESOP + Bonus</div></td>
+      <td class="location">Bengaluru</td>
+      <td><span class="role-chip">SDE-1</span><span class="role-chip">SDET</span><span class="role-chip">Data Eng</span></td>
+      <td class="cgpa">6.0+ CGPA</td>
+      <td class="process">OA → 2–3 Tech Rounds</td>
+      <td><div class="difficulty"><span class="dot fill-mid"></span><span class="dot fill-mid"></span><span class="dot fill-mid"></span><span class="dot empty"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">19</td>
+      <td><div class="company-name">Zomato</div><div class="company-type">Indian Product</div><span class="tag tag-startup">Startup</span></td>
+      <td class="month"><span class="month-chip">Oct</span><span class="month-chip">Nov</span></td>
+      <td><div class="pkg-high">₹15–25 LPA</div><div class="pkg-base">ESOP Potential</div></td>
+      <td class="location">Gurugram<br>Bengaluru</td>
+      <td><span class="role-chip">SDE-1</span><span class="role-chip">Backend Dev</span></td>
+      <td class="cgpa">6.0+ CGPA</td>
+      <td class="process">OA → 2–3 Tech Rounds<br>DSA + Behavioral</td>
+      <td><div class="difficulty"><span class="dot fill-mid"></span><span class="dot fill-mid"></span><span class="dot fill-mid"></span><span class="dot empty"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">20</td>
+      <td><div class="company-name">Paytm</div><div class="company-type">Indian FinTech</div><span class="tag tag-fintech">FinTech</span></td>
+      <td class="month"><span class="month-chip">Oct</span><span class="month-chip">Nov</span><span class="month-chip">Dec</span></td>
+      <td><div class="pkg-mid">₹12–20 LPA</div><div class="pkg-base">ESOP + Bonus</div></td>
+      <td class="location">Noida<br>Bengaluru<br>Mumbai</td>
+      <td><span class="role-chip">SDE-1</span><span class="role-chip">Android Dev</span></td>
+      <td class="cgpa">6.0+ CGPA</td>
+      <td class="process">OA → 2 Tech Rounds + HR</td>
+      <td><div class="difficulty"><span class="dot fill-mid"></span><span class="dot fill-mid"></span><span class="dot fill-mid"></span><span class="dot empty"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">21</td>
+      <td><div class="company-name">DE Shaw</div><div class="company-type">Hedge Fund · Quant Tech</div><span class="tag tag-fintech">FinTech</span></td>
+      <td class="month"><span class="month-chip">Aug</span><span class="month-chip">Sep</span></td>
+      <td><div class="pkg-high">₹30–50 LPA</div><div class="pkg-base">Bonus can be 100%+ of base</div></td>
+      <td class="location">Hyderabad</td>
+      <td><span class="role-chip">SWE</span><span class="role-chip">Quant Dev</span></td>
+      <td class="cgpa">8.0+ CGPA</td>
+      <td class="process">Aptitude + 3 Tech Rounds<br>Heavy on Algorithms</td>
+      <td><div class="difficulty"><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span><span class="dot fill-vhigh"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">22</td>
+      <td><div class="company-name">Infosys</div><div class="company-type">Indian IT Services</div><span class="tag tag-service">Service</span></td>
+      <td class="month"><span class="month-chip">Jul</span><span class="month-chip">Aug</span><span class="month-chip">Sep</span></td>
+      <td><div class="pkg-mid">₹12–22 LPA</div><div class="pkg-base">SP Track up to ₹22L</div></td>
+      <td class="location">Pune · Bengaluru<br>Hyderabad · Chennai<br>Mysuru · Noida</td>
+      <td><span class="role-chip">Systems Eng</span><span class="role-chip">SP Track</span><span class="role-chip">Digital</span></td>
+      <td class="cgpa">6.0+ CGPA<br>60%+</td>
+      <td class="process">InfyTQ → OA → HR<br>Mass Hiring</td>
+      <td><div class="difficulty"><span class="dot fill"></span><span class="dot fill"></span><span class="dot empty"></span><span class="dot empty"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">23</td>
+      <td><div class="company-name">TCS</div><div class="company-type">Indian IT Services</div><span class="tag tag-service">Service</span></td>
+      <td class="month"><span class="month-chip">Jul</span><span class="month-chip">Aug</span><span class="month-chip">Sep</span></td>
+      <td><div class="pkg-mid">₹12–18 LPA</div><div class="pkg-base">Ninja ₹3.5L · Digital ₹7L+</div></td>
+      <td class="location">Pan India<br>All Major Cities</td>
+      <td><span class="role-chip">ASE</span><span class="role-chip">Digital Analyst</span><span class="role-chip">Data Sci</span></td>
+      <td class="cgpa">6.0+ CGPA<br>60%+</td>
+      <td class="process">TCS NQT → OA → TR → HR<br>Largest fresher drive</td>
+      <td><div class="difficulty"><span class="dot fill"></span><span class="dot fill"></span><span class="dot empty"></span><span class="dot empty"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">24</td>
+      <td><div class="company-name">Accenture</div><div class="company-type">Global IT Consulting</div><span class="tag tag-service">Service</span></td>
+      <td class="month"><span class="month-chip">Jul</span><span class="month-chip">Aug</span><span class="month-chip">Sep</span></td>
+      <td><div class="pkg-mid">₹12–17 LPA</div><div class="pkg-base">ASE / Package B roles</div></td>
+      <td class="location">Bengaluru · Hyderabad<br>Mumbai · Chennai<br>Pune · Noida</td>
+      <td><span class="role-chip">ASE</span><span class="role-chip">Package B Dev</span></td>
+      <td class="cgpa">6.0+ CGPA</td>
+      <td class="process">Cognitive + Technical Test<br>→ HR Round</td>
+      <td><div class="difficulty"><span class="dot fill"></span><span class="dot fill"></span><span class="dot empty"></span><span class="dot empty"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">25</td>
+      <td><div class="company-name">Capgemini</div><div class="company-type">Global IT Services</div><span class="tag tag-service">Service</span></td>
+      <td class="month"><span class="month-chip">Jul</span><span class="month-chip">Aug</span></td>
+      <td><div class="pkg-mid">₹12–15 LPA</div><div class="pkg-base">Analyst/Sr Analyst roles</div></td>
+      <td class="location">Bengaluru · Pune<br>Mumbai · Hyderabad<br>Chennai</td>
+      <td><span class="role-chip">Analyst</span><span class="role-chip">Dev Trainee</span></td>
+      <td class="cgpa">6.0+ CGPA</td>
+      <td class="process">SVAR + Pseudocode → Tech<br>→ HR Round</td>
+      <td><div class="difficulty"><span class="dot fill"></span><span class="dot fill"></span><span class="dot empty"></span><span class="dot empty"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">26</td>
+      <td><div class="company-name">Deloitte</div><div class="company-type">Big 4 · Tech Consulting</div><span class="tag tag-service">Service</span></td>
+      <td class="month"><span class="month-chip">Sep</span><span class="month-chip">Oct</span><span class="month-chip">Nov</span></td>
+      <td><div class="pkg-mid">₹12–17 LPA</div><div class="pkg-base">Analyst CTC</div></td>
+      <td class="location">Mumbai · Bengaluru<br>Hyderabad · Pune<br>Delhi</td>
+      <td><span class="role-chip">Analyst</span><span class="role-chip">Associate Consultant</span></td>
+      <td class="cgpa">6.0+ CGPA</td>
+      <td class="process">Aptitude → GD → Tech → HR</td>
+      <td><div class="difficulty"><span class="dot fill-mid"></span><span class="dot fill-mid"></span><span class="dot fill-mid"></span><span class="dot empty"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">27</td>
+      <td><div class="company-name">IBM</div><div class="company-type">MNC · Hybrid IT</div><span class="tag tag-service">Service</span></td>
+      <td class="month"><span class="month-chip">Sep</span><span class="month-chip">Oct</span></td>
+      <td><div class="pkg-mid">₹12–16 LPA</div><div class="pkg-base">Associate SWE</div></td>
+      <td class="location">Bengaluru · Hyderabad<br>Pune · Delhi<br>Chennai</td>
+      <td><span class="role-chip">Assoc. SWE</span><span class="role-chip">DevOps</span><span class="role-chip">AI Eng</span></td>
+      <td class="cgpa">6.0+ CGPA</td>
+      <td class="process">Cognitive Ability → Tech<br>→ HR Round</td>
+      <td><div class="difficulty"><span class="dot fill"></span><span class="dot fill"></span><span class="dot fill"></span><span class="dot empty"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">28</td>
+      <td><div class="company-name">Cognizant</div><div class="company-type">Indian-origin MNC</div><span class="tag tag-service">Service</span></td>
+      <td class="month"><span class="month-chip">Aug</span><span class="month-chip">Sep</span></td>
+      <td><div class="pkg-mid">₹12–16 LPA</div><div class="pkg-base">GAT/Analyst roles</div></td>
+      <td class="location">Chennai · Bengaluru<br>Hyderabad · Pune<br>Kolkata</td>
+      <td><span class="role-chip">Graduate Analyst</span><span class="role-chip">Programmer Analyst</span></td>
+      <td class="cgpa">6.0+ CGPA</td>
+      <td class="process">AMCAT / Online Test → HR</td>
+      <td><div class="difficulty"><span class="dot fill"></span><span class="dot fill"></span><span class="dot empty"></span><span class="dot empty"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">29</td>
+      <td><div class="company-name">Persistent Systems</div><div class="company-type">Indian IT Product</div><span class="tag tag-service">Service</span></td>
+      <td class="month"><span class="month-chip">Sep</span><span class="month-chip">Oct</span><span class="month-chip">Nov</span></td>
+      <td><div class="pkg-mid">₹12–18 LPA</div><div class="pkg-base">Strong bonus + growth</div></td>
+      <td class="location">Pune · Nagpur<br>Bengaluru · Hyderabad<br>Chennai</td>
+      <td><span class="role-chip">SWE</span><span class="role-chip">Dev Engineer</span></td>
+      <td class="cgpa">6.0+ CGPA</td>
+      <td class="process">Written → 2 Tech Rounds + HR</td>
+      <td><div class="difficulty"><span class="dot fill-mid"></span><span class="dot fill-mid"></span><span class="dot fill-mid"></span><span class="dot empty"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+    <tr>
+      <td class="rank">30</td>
+      <td><div class="company-name">HCLTech</div><div class="company-type">Indian IT Services</div><span class="tag tag-service">Service</span></td>
+      <td class="month"><span class="month-chip">Aug</span><span class="month-chip">Sep</span><span class="month-chip">Oct</span></td>
+      <td><div class="pkg-mid">₹12–17 LPA</div><div class="pkg-base">Tech Bee / Engineer track</div></td>
+      <td class="location">Noida · Bengaluru<br>Chennai · Hyderabad<br>Pune · Lucknow</td>
+      <td><span class="role-chip">Software Eng</span><span class="role-chip">Tech Analyst</span></td>
+      <td class="cgpa">6.0+ CGPA</td>
+      <td class="process">HackerEarth → Tech → HR</td>
+      <td><div class="difficulty"><span class="dot fill"></span><span class="dot fill"></span><span class="dot empty"></span><span class="dot empty"></span><span class="dot empty"></span></div></td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+
+<footer>
+  <p>Data compiled from placement portals, company career pages & campus placement reports · April 2026</p>
+  <p>Packages shown are <span>Total CTC</span> (Base + Bonus + RSU/ESOP) · Actual take-home will be lower · Always verify on official portals</p>
+  <p>Difficulty scale: ●●●●● Very High (FAANG) → ●● Low (Mass Recruiters) · CGPA cutoffs vary by college tier</p>
+</footer>
+
+</body>
+</html>
